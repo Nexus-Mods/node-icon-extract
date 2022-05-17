@@ -11,9 +11,6 @@
       "dependencies": [
         "<!(node -p \"require('node-addon-api').gyp\")"
       ], 
-      "sources": [
-        "src/IconExtractor.cpp"
-      ],
       "msvs_settings": {
         "VCCLCompilerTool": {
           "ExceptionHandling": 1
@@ -22,6 +19,7 @@
       "conditions": [
         ['OS=="win"', {
           'sources': [
+      "src/IconExtractor.cpp"
 	    "src/IconExtractorWindows.cpp"
           ],
           "libraries": [
